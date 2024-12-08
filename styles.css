@@ -1,0 +1,155 @@
+/* Общие стили */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background: linear-gradient(to right, #f3e5f5, #e1bee7); /* Светло-фиолетовый фон */
+}
+
+/* Хедер */
+header {
+    background: linear-gradient(to right, #4a148c, #6a1b9a); /* Градиент: темно-фиолетовый */
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Логотип */
+.logo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo-text {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #d1c4e9; /* Светло-фиолетовый */
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.highlight {
+    color: #f48fb1; /* Розовый акцент */
+    font-style: italic;
+}
+
+/* Меню */
+.menu {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li {
+    margin: 0 15px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.menu a:hover {
+    color: #d1c4e9; /* Светло-фиолетовый */
+}
+
+/* Главный блок */
+.hero {
+    text-align: center;
+    margin-top: 50px;
+    padding: 50px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 2s ease-in-out;
+}
+
+.hero button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background: #4a148c; /* Темно-фиолетовый */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.hero button:hover {
+    background: #6a1b9a; /* Более светлый фиолетовый */
+}
+
+/* Анимации */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animated-header {
+    animation: slideDown 1s ease-in-out;
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+/* Список тем */
+.chapter-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.chapter-list ul li {
+    background: #ede7f6; /* Светло-фиолетовый */
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.chapter-list ul li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.chapter-list ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #4a148c; /* Темно-фиолетовый */
+    transition: color 0.3s;
+}
+
+.chapter-list ul li a:hover {
+    color: #f48fb1; /* Розовый */
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .menu {
+        flex-direction: column;
+    }
+
+    .menu li {
+        margin: 10px 0;
+    }
+}

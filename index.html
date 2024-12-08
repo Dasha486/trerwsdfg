@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Математический сайт</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="animated-header">
+        <div class="logo">
+            <span class="logo-text">Математика<span class="highlight">. Справочник</span></span>
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="chapters.html">Темы</a></li>
+                <li><a href="practice.html">Практика</a></li>
+                <li><a href="references.html">Литература</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+<img src="i.webp" alt="Альтернативный текст" width="400" height="300"/>
+            <p>Учебное пособие предназначено для самостоятельной подготовки учащихся 7 класса по предмету «Математика: Алгебра».
+
+Задачей пособия является самостоятельное изучение знаний по теме «выражения и их преобразования».
+
+Достоинством учебного пособия является доступное, четкое, хорошо иллюстрированное изложение материала с выделением ключевых понятий, большим количеством примеров, что способствует развитию творческого мышления, лучшему усвоению материала учащимися.</p>
+            <button onclick="scrollToChapters()">Начать изучение</button>
+        </section>
+    </main>
+    <script>
+        function scrollToChapters() {
+            window.location.href = "chapters.html";
+        }
+    </script>
+</body>
+</html>
